@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    {{>headerlinks}}
+</head>
+
+<body>
+    {{!-- NavBar --}}
+    {{>navbar}}
+
+    <!-- Main Header -->
+    <div class="container-fluid main_header mt-5">
+        <div class="row">
+            <div class="col-lg-6 col-md-6 mx-auto col-12 px-2">
+                <div class="main_content">
+                    <form class="temp_form mt-4">
+                        <input type="text" id="cityName" placeholder="Enter Your City name..." autocomplete="off">
+                        <input id="submitBtn" type="submit" value="Search">
+                    </form>
+                    <div class="temp-information">
+                        <div class="top_layer">
+                            <p id="day">Wey</p>
+                            <p id="date">13 OCT</p>
+                        </div>
+                        <div class="main_layer">
+                            <p id="city_name">Get output here</p>
+                            <div class="middle_layer data-hide">
+                                <p>
+                                    <span id="temp">40.5</span>
+                                    <sup>o</sup>C
+                                </p>
+                                <p id="temp_status">
+                                    <i class="fas fa-snowflake"></i>
+                                </p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    {{>footer}}
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <script src="js/index.js"></script>
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
+        crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js" integrity="sha384-SR1sx49pcuLnqZUnnPwx6FCym0wLsk5JZuNx2bPPENzswTNFaQU1RDvt3wT4gWFG" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.min.js" integrity="sha384-j0CNLUeiqtyaRmlzUHCPZ+Gy5fQu0dQ6eZ/xAww941Ai1SxSY+0EQqNXNE6DZiVc" crossorigin="anonymous"></script>
+    -->
+</body>
+
+</html>

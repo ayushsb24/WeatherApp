@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    {{>headerlinks}}
+</head>
+
+<body>
+    {{!-- NavBar --}}
+    {{>navbar}}
+
+    <!-- Main Header -->
+    <div class="container-fluid main_header mt-5">
+        <div class="row">
+            <div class="col-lg-10 col-md-10 mx-auto col-12">
+                <!-- Left Side Part -->
+                <div class="row">
+                    <div class="col-md-6 col-12 main_header_left d-flex flex-column  justify-content-center">
+                        <p>Welcome to Weather App</p>
+                        <h1>Get The Latest <span class="text_clr">Weather</span> Info Of Your City</h1>
+                        <a href="/weather"><button>Check Now</button></a>
+                    </div>
+                    <!-- Right Side Part -->
+                    <div class="col-md-6 col-12 main_header_left">
+                        <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img src="./images/c1.jpg" class="w-100" alt="...">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="./images/c2.jpg" class="w-100" alt="...">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="./images/c4.jpg" class="w-100" alt="...">
+                                </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button"
+                                data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button"
+                                data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    {{>footer}}
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
+        crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js" integrity="sha384-SR1sx49pcuLnqZUnnPwx6FCym0wLsk5JZuNx2bPPENzswTNFaQU1RDvt3wT4gWFG" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.min.js" integrity="sha384-j0CNLUeiqtyaRmlzUHCPZ+Gy5fQu0dQ6eZ/xAww941Ai1SxSY+0EQqNXNE6DZiVc" crossorigin="anonymous"></script>
+    -->
+</body>
+
+</html>
